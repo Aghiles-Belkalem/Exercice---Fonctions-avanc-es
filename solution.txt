@@ -1,0 +1,9 @@
+const people = ['JoHn', 'ChrISTiana', 'anThoNY', 'MARia', 'jaMeS', 'MIChaEl', 'jeNNIFeR'];
+  function origineName(name) {
+    return name.charAt(0).toUpperCase() + name.slice(1).toLowerCase()
+}
+    function nameCorrector(names, callback){
+      return names.map(callback);
+}
+const correctedNames = nameCorrector(people, origineName);
+  console.log(correctedNames);
